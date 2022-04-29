@@ -1,6 +1,11 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React from "react";
+import { TodoCounter } from './TodoCounter';
+import { TodoSearch } from './TodoSearch';
+import { TodoList } from './TodoList';
+import { TodoItem } from './TodoItem';
+import { CreateTodoButton } from './CreateTodoButton';
 
 const todos = [
   {text:'Cortar Cebolla', completed:false},
@@ -11,19 +16,17 @@ const todos = [
 function App() {
   return (
     <React.Fragment>
-      {/* <TodoCounter/> */}
-      <h2>Has completado 2 de 3 TODOS</h2>
-      {/* <TodoSearch/> */}
-      <input placeholder="Cebolla"/>
-      {/* <TodoList>
+      <TodoCounter/>      
+      <TodoSearch/>
+      
+      <TodoList>
 
       {todos.map(todo=>(
-        <TodoItem/>
+        <TodoItem key={todo.text}text={todo.text}/>
       ))}
 
-      </TodoList> */}
-      {/* <CreateTodoButton/> */}
-      <button>+</button>
+      </TodoList>
+      <CreateTodoButton/>      
     </React.Fragment>    
   );
 }
