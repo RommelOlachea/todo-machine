@@ -9,8 +9,9 @@ import { CreateTodoButton } from './CreateTodoButton';
 
 const todos = [
   {text:'Cortar Cebolla', completed:false},
-  {text:'Cortar Cebolla', completed:false},
+  {text:'Picar Tomate', completed:false},
   {text:'Llorar con la llorona', completed:false},
+  {text:'Bla Bla Bla', completed:false},
 ]
 
 function App() {
