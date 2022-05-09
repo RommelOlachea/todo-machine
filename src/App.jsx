@@ -8,7 +8,7 @@ import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
 
 const todos = [
-  {text:'Cortar Cebolla', completed:false},
+  {text:'Cortar Cebolla', completed:true},
   {text:'Picar Tomate', completed:false},
   {text:'Llorar con la llorona', completed:false},
   {text:'Bla Bla Bla', completed:false},
@@ -30,6 +30,7 @@ function App() {
       <CreateTodoButton/>      
     </React.Fragment>    
   );
+  
 }
 
 export default App;
